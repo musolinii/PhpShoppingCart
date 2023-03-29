@@ -11,6 +11,30 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <!-- custom script will be here -->
+
+<script>
+    $(document).ready(function() {
+        // update quantity button listener
+        $('.update-quantity-form').on('submit', function() {
+
+            // get basic information for updating the cart
+            var id = $(this).find('.product-id').text();
+            var quantity = $(this).find('.cart-quantity').val();
+
+            // redirect to update_quantity.php, with parameter values to process the request
+            window.location.href = "update_quantity.php?id=" + id + "&quantity=" + quantity;
+            return false;
+        });
+        
+        // change product image on hover
+        $(document).on('mouseenter', '.product-img-thumb', function () {
+            var data_img_id = $(this).attr('data-img-id');
+            $('.product-img').hide();
+            $('#product-img-' + data_img_id).show();
+        });
+    });
+</script>
+
 </body>
 
 </html>
