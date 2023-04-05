@@ -27,7 +27,7 @@
                       placeholder="Name"><br>
           <?php }?>
 
-          <label>User Name</label>
+          <label>Registration Number</label>
           <?php if (isset($_GET['uname'])) { ?>
                <input type="text" 
                       name="uname" 

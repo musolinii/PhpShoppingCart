@@ -9,7 +9,7 @@
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="products.php">SEKU MESS APP</a>
+			<a class="navbar-brand" href="products.php">Seku Mess App</a>
 		</div>
 
 		<div class="navbar-collapse collapse">
@@ -21,7 +21,11 @@
 				</li>
 
 				<li <?php echo strpos($page_title, "Product")!==false ? "class='active'" : ""; ?>>
-					<a href="login.php">logout</a>
+					<a href="login.php">Logout</a>
+				</li>
+
+                <li <?php echo strpos($page_title, "Product")!==false ? "class='active'" : ""; ?>>
+					<a href="login.php">Add items</a>
 				</li>
 
 				<li <?php echo $page_title=="Cart" ? "class='active'" : ""; ?> >

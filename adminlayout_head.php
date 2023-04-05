@@ -11,12 +11,12 @@
     <link href="libs/css/custom.css" rel="stylesheet" media="screen">
 </head>
 <body>
-	<?php include 'navigation.php'; ?>
+	<?php include 'admin_nav.php'; ?>
     <!-- container -->
     <div class="container">
         <div class="row">
         <div class="col-md-12">
             <div class="page-header">
-                <h1><?php echo isset($page_title) ? $page_title : "The Code of a Ninja"; ?></h1>
+                <h1><?php echo isset($page_title) ? $page_title : "Seku Mess App"; ?></h1>
             </div>
         </div>

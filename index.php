@@ -10,7 +10,7 @@
      	<?php if (isset($_GET['error'])) { ?>
      		<p class="error"><?php echo $_GET['error']; ?></p>
      	<?php } ?>
-     	<label>User Name</label>
+     	<label>Registration Number</label>
      	<input type="text" name="uname" placeholder="User Name"><br>
 
      	<label>Password</label>
@@ -18,7 +18,7 @@
 
      	<button type="submit">Login</button>
           <a href="signup.php" class="ca">Create an account</a>
-		  <a href="admin_signup.php" class="ca">Admin?</a>
+		  <a href="admin_login.php" class="ca">Admin?</a>
 
      </form>
 </body>
